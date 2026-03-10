@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>BlockCommentInitialStarAlignment:Theme.kt$/* Other default colors to override background = Color(0xFFFFFBFE), surface = Color(0xFFFFFBFE), onPrimary = Color.White, onSecondary = Color.White, onTertiary = Color.White, onBackground = Color(0xFF1C1B1F), onSurface = Color(0xFF1C1B1F), */</ID>
+    <ID>BlockCommentInitialStarAlignment:Type.kt$/* Other default text styles to override titleLarge = TextStyle( fontFamily = FontFamily.Default, fontWeight = FontWeight.Normal, fontSize = 22.sp, lineHeight = 28.sp, letterSpacing = 0.sp ), labelSmall = TextStyle( fontFamily = FontFamily.Default, fontWeight = FontWeight.Medium, fontSize = 11.sp, lineHeight = 16.sp, letterSpacing = 0.5.sp ) */</ID>
+    <ID>FinalNewline:AuthenticationTest.kt$com.example.unittesting.AuthenticationTest.kt</ID>
+    <ID>FinalNewline:Color.kt$com.example.unittesting.ui.theme.Color.kt</ID>
+    <ID>FinalNewline:ExampleUnitTest.kt$com.example.unittesting.ExampleUnitTest.kt</ID>
+    <ID>FinalNewline:Theme.kt$com.example.unittesting.ui.theme.Theme.kt</ID>
+    <ID>FinalNewline:Type.kt$com.example.unittesting.ui.theme.Type.kt</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun UnitTestingTheme( darkTheme: Boolean = isSystemInDarkTheme(), // Dynamic color is available on Android 12+ dynamicColor: Boolean = true, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionStartOfBodySpacing:AuthenticationTest.kt$AuthenticationTest$@Before fun setup()</ID>
+    <ID>FunctionStartOfBodySpacing:AuthenticationTest.kt$AuthenticationTest$@Test fun `checks correct email format returns error` ()</ID>
+    <ID>FunctionStartOfBodySpacing:AuthenticationTest.kt$AuthenticationTest$@Test fun `signup test for password size less than 6 return error`()</ID>
+    <ID>ImportOrdering:ExampleUnitTest.kt$import org.junit.Test import org.junit.Assert.*</ID>
+    <ID>MagicNumber:Authentication.kt$Authentication$6</ID>
+    <ID>MagicNumber:Color.kt$0xFF625b71</ID>
+    <ID>MagicNumber:Color.kt$0xFF6650a4</ID>
+    <ID>MagicNumber:Color.kt$0xFF7D5260</ID>
+    <ID>MagicNumber:Color.kt$0xFFCCC2DC</ID>
+    <ID>MagicNumber:Color.kt$0xFFD0BCFF</ID>
+    <ID>MagicNumber:Color.kt$0xFFEFB8C8</ID>
+    <ID>MaxLineLength:Authentication.kt$/* after adding plugin and dependencies run ./gradlew detekt (it will show error , which tells us it is working) ( go to -&gt; under project -&gt; app&gt; buid &gt; reports &gt; detekt.xml) it is showing the error because the detekt is not followed from starting to resolve the probelem we need baseline which will ignore the codes written previously before implementing detekt ./gradlew detektBaseline then go to detekt-baseline.xml now run the detekt , it will not show error */</ID>
+    <ID>NewLineAtEndOfFile:AuthenticationTest.kt$com.example.unittesting.AuthenticationTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Color.kt$com.example.unittesting.ui.theme.Color.kt</ID>
+    <ID>NewLineAtEndOfFile:ExampleUnitTest.kt$com.example.unittesting.ExampleUnitTest.kt</ID>
+    <ID>NewLineAtEndOfFile:Theme.kt$com.example.unittesting.ui.theme.Theme.kt</ID>
+    <ID>NewLineAtEndOfFile:Type.kt$com.example.unittesting.ui.theme.Type.kt</ID>
+    <ID>NoBlankLineBeforeRbrace:AuthenticationTest.kt$AuthenticationTest$ </ID>
+    <ID>NoBlankLineBeforeRbrace:MainActivity.kt$MainActivity$ </ID>
+    <ID>NoConsecutiveBlankLines:Authentication.kt$ </ID>
+    <ID>NoConsecutiveBlankLines:AuthenticationTest.kt$ </ID>
+    <ID>NoConsecutiveBlankLines:MainActivity.kt$ </ID>
+    <ID>NoEmptyFirstLineInMethodBlock:MainActivity.kt$MainActivity$ </ID>
+    <ID>NoUnusedImports:MainActivity.kt$com.example.unittesting.MainActivity.kt</ID>
+    <ID>NoUnusedImports:Theme.kt$com.example.unittesting.ui.theme.Theme.kt</ID>
+    <ID>NoWildcardImports:ExampleUnitTest.kt$import org.junit.Assert.*</ID>
+    <ID>SpacingAroundColon:Authentication.kt$Authentication$:</ID>
+    <ID>SpacingAroundColon:AuthenticationTest.kt$AuthenticationTest$:</ID>
+    <ID>SpacingAroundComma:Authentication.kt$Authentication$,</ID>
+    <ID>SpacingAroundComma:AuthenticationTest.kt$AuthenticationTest$,</ID>
+    <ID>SpacingAroundCurly:Authentication.kt$Authentication${</ID>
+    <ID>SpacingAroundCurly:AuthenticationTest.kt$AuthenticationTest${</ID>
+    <ID>SpacingAroundKeyword:Authentication.kt$Authentication$when</ID>
+    <ID>SpacingAroundOperators:Authentication.kt$Authentication$-&gt;</ID>
+    <ID>SpacingAroundParens:AuthenticationTest.kt$AuthenticationTest$(</ID>
+    <ID>SpacingBetweenDeclarationsWithAnnotations:AuthenticationTest.kt$AuthenticationTest$@Before fun setup()</ID>
+    <ID>SpacingBetweenFunctionNameAndOpeningParenthesis:AuthenticationTest.kt$AuthenticationTest$@Test fun `checks correct email format returns error` ()</ID>
+    <ID>WildcardImport:ExampleUnitTest.kt$import org.junit.Assert.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
