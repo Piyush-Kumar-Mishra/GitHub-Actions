@@ -13,7 +13,9 @@ package com.example.unittesting
   git pull (so that it will pull the main.yml from github to android studio)
     in android studio run ./gradlew lintDebug gives link to lint report
 
-    now we have added lint (changes in main.yml) also added link of lint report in main.yml
+   now we have added lint (changes in main.yml) also added link of lint report in main.yml
+    ./gradlew test
+    start app/build/reports/tests/testDebugUnitTest/index.html
 */
 
 

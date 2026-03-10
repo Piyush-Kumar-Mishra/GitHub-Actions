@@ -17,8 +17,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
       - name: Make gradlew executable
         run: chmod +x gradlew
@@ -26,14 +26,38 @@ jobs:
       - name: Run Android Lint
         run: ./gradlew lint
 
-      - name: Upload html test report
+      - name: Upload lint report
         uses: actions/upload-artifact@v4
         with:
-          name: index.html
+          name: lint-report
           path: app/build/reports/lint-results-debug.html
 
       - name: Build project
         run: ./gradlew build
 
-      - name: Run unit tests
+
+  unit-test:
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Run tests
         run: ./gradlew test
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit_test_report
+          path: app/build/reports/tests/testDebugUnitTest/
