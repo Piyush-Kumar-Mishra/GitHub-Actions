@@ -7,6 +7,13 @@ package com.example.unittesting
   to resolve the probelem we need baseline which will ignore the codes written previously before implementing detekt ./gradlew detektBaseline
   then go to detekt-baseline.xml
   now run the detekt , it will not show error
+
+  //github action
+  create main.yml add basic action workflow
+  git pull (so that it will pull the main.yml from github to android studio)
+    in android studio run ./gradlew lintDebug gives link to lint report
+
+    now we have added lint (changes in main.yml) also added link of lint report in main.yml
 */
 
 
