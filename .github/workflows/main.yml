@@ -91,7 +91,6 @@ jobs:
         with:
           name: instrumentation-test-report
           path: app/build/reports/androidTests/connected/
-
   package:
     name: Generate APK
     needs: [ instrumentation-test ]
